@@ -15,6 +15,4 @@ class User(AbstractUser):
         max_length=150,
         default="",
     )
-    is_host = models.BooleanField(
-        default=False,
-    )
+    is_host = models.BooleanField(null=True)
