@@ -272,6 +272,18 @@ aiohttp = ["aiohttp (>=3.7.4.post0,<4.0.0)"]
 fastapi = ["fastapi (>=0.65.2)"]
 
 [[package]]
+name = "strawberry-graphql-django"
+version = "0.5.1"
+description = "Strawberry GraphQL Django extension"
+category = "main"
+optional = false
+python-versions = ">=3.7,<4.0"
+
+[package.dependencies]
+Django = ">=3.0"
+strawberry-graphql = ">=0.109.0"
+
+[[package]]
 name = "tomli"
 version = "2.0.1"
 description = "A lil' TOML parser"
@@ -313,7 +325,7 @@ standard = ["colorama (>=0.4)", "httptools (>=0.4.0)", "python-dotenv (>=0.13)",
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "b23804a881213f1a69070a618c04fb9a0cb24452e004f521ac412099a451a10f"
+content-hash = "0d8196143ec530121d37c8de10d62b217bc5bdf8d1af88aa677d170aaa8c16e0"
 
 [metadata.files]
 anyio = [
@@ -483,6 +495,10 @@ starlette = [
 strawberry-graphql = [
     {file = "strawberry-graphql-0.130.3.tar.gz", hash = "sha256:81c0ef427b50f2ca5e87bc9842f53ecfa2042837c465082126dcb0c527f10d2a"},
     {file = "strawberry_graphql-0.130.3-py3-none-any.whl", hash = "sha256:c421b444d555666d957a054e395615a388866b26ae25409a80f0fc13a809fa46"},
+]
+strawberry-graphql-django = [
+    {file = "strawberry-graphql-django-0.5.1.tar.gz", hash = "sha256:e807492399f1c823c88d82919efb6e5a564edc405f0c72b704beec8d608b5012"},
+    {file = "strawberry_graphql_django-0.5.1-py3-none-any.whl", hash = "sha256:eda8b06218b44ee17c348df78f155a26654699874414cd594a982cbf4760c0fe"},
 ]
 tomli = [
     {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
