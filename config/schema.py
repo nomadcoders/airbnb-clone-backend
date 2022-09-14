@@ -17,7 +17,10 @@ def get_books():
 
 @strawberry.type
 class Query:
-    books: typing.List[Book] = strawberry.field(resolver=get_books)
+    # books: typing.List[Book] = strawberry.field(resolver=get_books)
+    @strawberry.field
+    def books(self) -> typing.List[Book]:
+        return books
 
 
 @strawberry.type
