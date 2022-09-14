@@ -7,3 +7,9 @@ from . import models
 class Room:
     id: auto
     name: auto
+    emoji: str
+
+    @strawberry.field
+    def emoji(self, info) -> str:
+        print(self.name)
+        return self.name
