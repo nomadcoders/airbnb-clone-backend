@@ -168,5 +168,9 @@ REST_FRAMEWORK = {
         "config.authentication.TrustMeBroAuthentication",
         "rest_framework.authentication.TokenAuthentication",
         "config.authentication.JWTAuthentication",
-    ]
+    ],
+    "DEFAULT_RENDERER_CLASSES": [
+        "rest_framework.renderers.JSONRenderer",
+        "rest_framework.renderers.BrowsableAPIRenderer",
+    ],
 }
