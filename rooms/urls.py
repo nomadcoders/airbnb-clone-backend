@@ -11,4 +11,5 @@ urlpatterns = [
     path("<int:pk>/bookings/check", views.RoomBookingCheck.as_view()),
     path("amenities/", views.Amenities.as_view()),
     path("amenities/<int:pk>", views.AmenityDetail.as_view()),
+    path("make-error", views.make_error),
 ]
