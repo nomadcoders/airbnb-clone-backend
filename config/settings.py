@@ -218,6 +218,10 @@ if not DEBUG:
     COOKIE_DOMAINS = ".onrender.com"
     SESSION_COOKIE_DOMAIN = COOKIE_DOMAINS
     CSRF_COOKIE_DOMAIN = COOKIE_DOMAINS
+    SESSION_COOKIE_HTTPONLY = False
+    CSRF_COOKIE_HTTPONLY = False
+    SESSION_COOKIE_SECURE = False
+    SESSION_COOKIE_DOMAIN = ".nomadsubs.com"
     sentry_sdk.init(
         dsn="https://5344b5a4537c4c7bb8a18457d9905e05@o285966.ingest.sentry.io/4503890242961408",
         integrations=[
