@@ -215,6 +215,7 @@ CF_TOKEN = env("CF_TOKEN")
 
 
 if not DEBUG:
+    SESSION_COOKIE_DOMAIN = ".onrender.com"
     sentry_sdk.init(
         dsn="https://5344b5a4537c4c7bb8a18457d9905e05@o285966.ingest.sentry.io/4503890242961408",
         integrations=[
