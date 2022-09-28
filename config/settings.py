@@ -197,14 +197,17 @@ REST_FRAMEWORK = {
     ],
 }
 
+if DEBUG:
 
-CORS_ALLOWED_ORIGINS = ["http://127.0.0.1:3000"]
+    CORS_ALLOWED_ORIGINS = ["http://127.0.0.1:3000"]
+    CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1:3000"]
+
+else:
+    CORS_ALLOWED_ORIGINS = ["https://airbnb-frontend.onrender.com"]
+
+    CSRF_TRUSTED_ORIGINS = ["https://airbnb-frontend.onrender.com"]
 
 CORS_ALLOW_CREDENTIALS = True
-
-CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1:3000"]
-
-
 GH_SECRET = env("GH_SECRET")
 
 CF_ID = env("CF_ID")
